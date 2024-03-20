@@ -77,9 +77,22 @@ body {
     padding: 10px;
     display: grid;
     justify-items: center;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: 20px;
 
     & input {
-      width: 80%;
+      width: 90%;
+      height: 36px;
+      border: none;
+      border-radius: 16px;
+      background-color: var(--color-content-bg);
+      justify-self: start;
+      padding: 8px 12px;
+    }
+
+    & span {
+      font-size: 1.6rem;
     }
   }
 
