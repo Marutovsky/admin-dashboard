@@ -195,7 +195,8 @@ body {
   display: grid;
   grid-template: 1fr 1fr / 3fr 1fr;
   z-index: 8;
-  padding: 32px 16px;
+  padding: 32px 24px;
+  gap: 40px;
 }
 
 .projects {
@@ -203,12 +204,42 @@ body {
 
   & div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: 20px;
-
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
   }
 
   & h3 {
     margin: 12px 0;
+  }
+
+  & h4 {
+    margin: 0;
+  }
+
+  .card {
+    background-color: var(--color-white);
+    border-left: 10px solid var(--color-accent);
+    border-radius: 10px;
+    grid-template-columns: auto;
+    grid-auto-rows: min-content auto min-content;
+
+    height: 250px;
+
+    padding: 32px 24px;
+    gap: 0;
+
+    box-shadow: 2px 4px 12px -8px var(--color-content-font);
+
+    & p {
+      margin: 4px 0;
+    }
+
+    & div {
+      grid-template-columns: repeat(3, min-content);
+      justify-content: end;
+      gap: 40px;
+      font-size: 1.6rem;
+      align-self: end;
+    }
   }
 }
