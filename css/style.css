@@ -16,6 +16,23 @@
 
 body {
   font-family: "MuseoModerno", sans-serif;
+  font-size: 16px;
+
+  & h1 {
+    font-size: 2.4em;
+  }
+
+  & h2 {
+    font-size: 1.8rem;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+  }
+
+  & h4 {
+    font-size: 1.3rem;
+  }
 }
 
 .layout {
@@ -43,12 +60,8 @@ body {
     gap: 20px;
   }
 
-  & h1 {
-    font-size: 2.4rem;
-
-    & span {
-      font-size: 4rem;
-    }
+  & h1 span {
+    font-size: 4rem;
   }
 
   & ul {
@@ -146,10 +159,6 @@ body {
       align-self: end;
       font-weight: 600;
       font-size: 1.1rem;
-    }
-
-    & h2 {
-      font-size: 1.8rem;
     }
   }
 
