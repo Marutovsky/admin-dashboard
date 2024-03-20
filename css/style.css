@@ -71,7 +71,7 @@ body {
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 
   & .searchbar {
     padding: 10px;
