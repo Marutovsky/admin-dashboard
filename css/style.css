@@ -238,6 +238,7 @@ body {
     & p {
       margin: 4px 0;
       color: var(--color-paragraph);
+      font-size: 1.1rem;
     }
 
     & div {
