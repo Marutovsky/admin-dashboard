@@ -4,6 +4,7 @@
   --color-sidebar-bg: #22577A;
   --color-content-bg: #e2e8f0;
   --color-content-font: #1f2937;
+  --color-paragraph: #5a626f;
   --color-accent: #10B981;
   --color-white: #fff;
 }
@@ -32,6 +33,10 @@ body {
 
   & h4 {
     font-size: 1.3rem;
+  }
+
+  & h5 {
+   font-size: 1.1rem;
   }
 }
 
@@ -232,6 +237,7 @@ body {
 
     & p {
       margin: 4px 0;
+      color: var(--color-paragraph);
     }
 
     & div {
@@ -241,5 +247,38 @@ body {
       font-size: 1.6rem;
       align-self: end;
     }
+  }
+}
+
+.announcements h3 {
+  margin: 12px 0;
+}
+
+.announcements-card {
+  background-color: var(--color-white);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 12px -8px var(--color-content-font);
+
+  & div {
+    padding: 20px 0;
+    border-bottom: 1px solid lightgray;
+  }
+
+  & div:last-child {
+    border: none;
+  }
+
+  & h5,
+  p {
+    margin: 0;
+  }
+
+  & p {
+    color: var(--color-paragraph);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }
