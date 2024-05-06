@@ -198,7 +198,7 @@ body {
   height: min-content;
   grid-column: 2 / 3;
   display: grid;
-  grid-template: min-content min-content / 3fr 1fr;
+  grid-template: min-content 1fr / 3fr 1fr;
   z-index: 8;
   padding: 32px 24px;
   gap: 30px;
@@ -228,7 +228,7 @@ body {
     grid-template-columns: auto;
     grid-auto-rows: min-content auto min-content;
 
-    height: 250px;
+    height: 270px;
 
     padding: 32px 24px;
     gap: 0;
@@ -259,6 +259,7 @@ body {
 .announcements-card {
   background-color: var(--color-white);
   padding: 20px 40px;
+  margin-bottom: 32px;
   border-radius: 10px;
   box-shadow: 2px 4px 12px -8px var(--color-content-font);
 
